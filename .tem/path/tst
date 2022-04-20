@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+cd "$(tem find -b temjs)"
+pnpm test "$@"
+
