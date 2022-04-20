@@ -1,32 +1,37 @@
 {
-  "name": "temjs",
-  "version": "0.1.0",
-  "description": "Don't repeat yourself. Ever. Again.",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc --declaration",
-    "fmt": "prettier .",
-    "test": "ts-mocha test/**/*.test.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tem-cli/temjs.git"
-  },
-  "author": "Haris Gusic <harisgusic.dev@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tem-cli/temjs/issues"
-  },
-  "homepage": "https://github.com/tem-cli/temjs#readme",
-  "devDependencies": {
-    "@types/chai": "^4.3.1",
-    "@types/mocha": "^9.1.0",
-    "@types/node": "^17.0.23",
-    "chai": "^4.3.6",
-    "eslint": "^8.13.0",
-    "mocha": "^9.2.2",
-    "prettier": "^2.6.2",
-    "ts-mocha": "^9.0.2",
-    "typescript": "^4.6.3"
-  }
+    "name": "temjs",
+    "version": "0.1.0",
+    "description": "Don't repeat yourself. Ever. Again.",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc --declaration",
+        "fmt": "prettier --write .",
+        "lint": "eslint .",
+        "fix": "pnpm fmt && eslint --fix .",
+        "test": "ts-mocha test/**/*.test.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tem-cli/temjs.git"
+    },
+    "author": "Haris Gusic <harisgusic.dev@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tem-cli/temjs/issues"
+    },
+    "homepage": "https://github.com/tem-cli/temjs#readme",
+    "devDependencies": {
+        "@types/chai": "^4.3.1",
+        "@types/mocha": "^9.1.0",
+        "@types/node": "^17.0.23",
+        "@typescript-eslint/eslint-plugin": "^5.20.0",
+        "@typescript-eslint/parser": "^5.20.0",
+        "chai": "^4.3.6",
+        "eslint": "^8.13.0",
+        "mocha": "^9.2.2",
+        "prettier": "^2.6.2",
+        "prettier-eslint-cli": "^5.0.1",
+        "ts-mocha": "^9.0.2",
+        "typescript": "^4.6.3"
+    }
 }

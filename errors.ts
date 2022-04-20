@@ -1,4 +1,3 @@
-
 export class NoTemDirInHierarchyError extends Error {
     constructor(path: string) {
         super(path);

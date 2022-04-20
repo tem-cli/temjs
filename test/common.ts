@@ -10,7 +10,7 @@ export function prepare(module: string) {
 
 function recreateDir(path: string) {
     try {
-        fs.rmSync(path, {recursive: true});
+        fs.rmSync(path, { recursive: true });
     } catch (err) {
         console.debug(err);
     }
